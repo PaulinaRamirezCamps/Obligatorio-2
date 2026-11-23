@@ -1,18 +1,7 @@
 # Bitácora — Obligatorio 2
 
-**Integrantes:** Nombre Apellido (Nº estudiante), Nombre Apellido (Nº estudiante)
+## 2026-11-10 - En conjunto
+- Leimos el ejercicio 6, resumimos para comprender y tener bien claro que hacer. Arrancamos con su implementación que nos resulto bastante sencilla, por lo que la terminamos hoy mismo y ya resumimos el ejercicio7
 
-> **Instrucciones** (borrar esta sección antes de entregar): agregar una entrada por
-> cada día trabajado, indicando la fecha y quién trabajó (un integrante o "En conjunto").
-> Registrar el proceso real: ideas exploradas, decisiones y su justificación, partes de
-> implementaciones, bugs encontrados y cómo se corrigieron, resultados de pruebas y dudas
-> abiertas. Si se usó IA ese día, indicar herramienta, consulta y qué se hizo con la
-> respuesta. Una bitácora escrita íntegramente el día de la entrega implica pérdida de puntos.
-
-## AAAA-MM-DD — Nombre
-- Ejemplo: Leí la letra del ejercicio 6. Primera idea: ... pero la restricción de
-  complejidad pide ..., así que ...
-
-## AAAA-MM-DD — En conjunto
-- Ejemplo: Implementamos ... Bug: ... Lo corregimos ...
-- Pasan los casos de prueba 1 a 4 del ejercicio 6.
+## 2026-11-12 - En conjunto
+- Empezamos el ejercico 7 y lo terminamos aunque nos costo un poco mas que el anterior, al principio algunas pruebas nos fallaron pero con ayuda de chat GPT pudimos entender que cosas de nuestro codigo estaban fallando, era un pequeño detalle en el calculo de las remontadas. Ya aprovechamos e hicimos la justificacion de ordenes de ambos ejercicios

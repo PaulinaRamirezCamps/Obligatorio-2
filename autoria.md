@@ -1,24 +1,11 @@
 # Declaración de autoría — Obligatorio 2
 
-> **Instrucciones** (borrar esta sección antes de entregar): declarar para cada ejercicio
-> las fuentes utilizadas: código discutido o desarrollado en clase, recursos web (con URL)
-> y uso de herramientas de IA generativa (herramienta, consulta y uso dado, según los
-> lineamientos de Uso de IA de la letra). Si no se usaron fuentes externas, indicarlo
-> explícitamente. Los fragmentos de terceros o generados por IA deben además señalarse
-> con comentarios en el código fuente. La omisión de fuentes puede considerarse plagio.
-
 ## Ejercicio 6
-- Implementación íntegramente propia, sin fuentes externas.
+
+- Implementación propia, utilizando los conceptos de greedy trabajados en clase
+- Consultamos esta página web: https://www.w3schools.com/cpp/cpp_ref_string.asp en la cual nos basamos para utilizar las funciones de la libreria string, ya que de algunas estabamos un poco olvidadas
 
 ## Ejercicio 7
-- Implementación íntegramente propia, sin fuentes externas.
-
-## Ejercicio 8
-- Implementación íntegramente propia, sin fuentes externas.
-
-## Ejercicio 9
-- Implementación íntegramente propia, sin fuentes externas.
-
-## Ejercicio 10
-- Implementación íntegramente propia, sin fuentes externas.
+- Implementación propia, utilizando la siguiente página geeks for geeks como ayuda para el algoritmo de divide and conquer: https://www.geeksforgeeks.org/dsa/introduction-to-divide-and-conquer-algorithm/
+- Utilizamos IA para chequear algunos detalles ya que no estabamos seguras y nos corregió 
 

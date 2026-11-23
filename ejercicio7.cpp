@@ -1,12 +1,20 @@
-#include <cassert>
-#include <string>
+#include <cstdint>
 #include <iostream>
-#include <limits>
-
-using namespace std;
+#include <string>
+#include "funciones/divideAndConquer.cpp"
 
 int main()
 {
-    // TODO
-    return 0;
+    std::int64_t N;
+    std::cin >> N;
+
+    int64_t* dorsales = new int64_t[N + 1];
+    int64_t* aux = new int64_t[N + 1];
+    
+    for (int i = 0; i < N; i++)
+    {
+        std::cin >> dorsales[i];
+    }
+
+    std:: cout << divideAndConquer(dorsales, aux, 0, N);
 }
