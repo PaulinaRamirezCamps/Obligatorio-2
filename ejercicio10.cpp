@@ -24,31 +24,25 @@ int main()
         {
             usado[i] = false;
         }
-        cantidadLetras = 0;
-        for (int i = 0; i <= K; i++)
-        {
-            for (int j = 0; j < palabras[i].size(); j++)
-            {
-                int letra = palabras[i][j] - 'A';
-
-                if (letras[letra] == -1)
-                {
-                    letras[letra] = -2;
-                    cantidadLetras++;
-                }
-            }
-        }
-
         for (int i = 0; i < 26; i++)
         {
-            if (letras[i] == -2)
+            letraInicial[i] = false;
+        }
+        cantidadColumnas = 0;
+        for (int i = 0; i <= K; i++)
+        {
+            if (palabras[i].size() > 1)
             {
-                letras[i] = -1;
+                letraInicial[palabras[i][0] - 'A'] = true;
+            }
+            if ((int)palabras[i].size() > cantidadColumnas)
+            {
+                cantidadColumnas = (int)palabras[i].size();
             }
         }
 
         haySolucion = false;
-        resolver(0);
+        resolverColumna(0, 0);
         if (!haySolucion)
         {
             cout << "imposible" << endl;
