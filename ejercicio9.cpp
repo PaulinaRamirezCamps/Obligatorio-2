@@ -22,6 +22,6 @@ int main()
         std::cin >> likes[i];
     }
 
-    std::cout << maxLikes(K, a, likes);
+    std::cout << maxLikes(K, a, likes) << std::endl;
     return 0;
 }

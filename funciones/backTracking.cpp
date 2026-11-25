@@ -47,7 +47,6 @@ bool puedeMejorar()
     {
         return true;
     }
-
     int64_t resultadoMinimo = limiteInferior(palabras[K]);
     if (resultadoMinimo < mejorResultado)
     {
@@ -132,7 +131,6 @@ void asignarLetrasColumna(int indice, int cantidad, int letrasColumna[6], int co
                 total += letras[palabras[i][posicion] - 'A'];
             }
         }
-
         int digitoResultado = (int)(total % 10);
         int posicionResultado = (int)palabras[K].size() - 1 - columna;
         if (posicionResultado >= 0)
@@ -159,8 +157,7 @@ void asignarLetrasColumna(int indice, int cantidad, int letrasColumna[6], int co
         {
             letras[letra] = digito;
             usado[digito] = true;
-            asignarLetrasColumna(indice + 1, cantidad, letrasColumna,
-                                 columna, acarreo);
+            asignarLetrasColumna(indice + 1, cantidad, letrasColumna, columna, acarreo);
             letras[letra] = -1;
             usado[digito] = false;
         }

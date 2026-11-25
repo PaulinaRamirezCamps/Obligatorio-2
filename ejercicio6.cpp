@@ -19,6 +19,6 @@ int main()
         std::cin >> numero;
         frecuencia[numero]++;
     }
-    std::cout << greedy(frecuencia);
+    std::cout << greedy(frecuencia) << std::endl;
     return 0;
 }

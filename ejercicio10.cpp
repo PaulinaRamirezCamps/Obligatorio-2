@@ -55,7 +55,6 @@ int main()
                 {
                     cout << " + ";
                 }
-
                 cout << mejorSumandos[i];
             }
             cout << " = " << mejorResultado << endl;
