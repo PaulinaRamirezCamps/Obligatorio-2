@@ -1,5 +1,3 @@
-
-#include <vector>
 #include <algorithm>
 
 int asado(int N, int W, int *L, int *p, int *s, int *cat)
@@ -9,17 +7,37 @@ int asado(int N, int W, int *L, int *p, int *s, int *cat)
     int C = L[2] + 1;
     int D = L[3] + 1;
 
-    std::vector<std::vector<std::vector<std::vector<std::vector<std::vector<int>>>>>> tabla(
-        N + 1,
-        std::vector<std::vector<std::vector<std::vector<std::vector<int>>>>>(
-            W + 1,
-            std::vector<std::vector<std::vector<std::vector<int>>>>(
-                A,
-                std::vector<std::vector<std::vector<int>>>(
-                    B,
-                    std::vector<std::vector<int>>(
-                        C,
-                        std::vector<int>(D, 0))))));
+    int ******tabla = new int *****[N + 1];
+
+    for (int i = 0; i <= N; i++)
+    {
+        tabla[i] = new int ****[W + 1];
+
+        for (int w = 0; w <= W; w++)
+        {
+            tabla[i][w] = new int ***[A];
+
+            for (int a = 0; a < A; a++)
+            {
+                tabla[i][w][a] = new int **[B];
+
+                for (int b = 0; b < B; b++)
+                {
+                    tabla[i][w][a][b] = new int *[C];
+
+                    for (int c = 0; c < C; c++)
+                    {
+                        tabla[i][w][a][b][c] = new int[D];
+
+                        for (int d = 0; d < D; d++)
+                        {
+                            tabla[i][w][a][b][c][d] = 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     for (int i = 1; i <= N; i++)
     {
@@ -39,23 +57,15 @@ int asado(int N, int W, int *L, int *p, int *s, int *cat)
                             int b2 = b;
                             int c2 = c;
                             int d2 = d;
-
                             if (cat[i] == 0)
-                            {
                                 a2--;
-                            }
                             if (cat[i] == 1)
-                            {
                                 b2--;
-                            }
                             if (cat[i] == 2)
-                            {
                                 c2--;
-                            }
                             if (cat[i] == 3)
-                            {
                                 d2--;
-                            }
+
                             if (p[i] <= w && a2 >= 0 && b2 >= 0 && c2 >= 0 && d2 >= 0)
                             {
                                 int candidato = tabla[i - 1][w - p[i]][a2][b2][c2][d2] + s[i];
@@ -69,5 +79,6 @@ int asado(int N, int W, int *L, int *p, int *s, int *cat)
         }
     }
 
-    return tabla[N][W][L[0]][L[1]][L[2]][L[3]];
+    int resultado = tabla[N][W][L[0]][L[1]][L[2]][L[3]];
+    return resultado;
 }
