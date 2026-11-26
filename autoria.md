@@ -19,4 +19,4 @@
 
 ## Ejercicio 10
 - Implementación propia, utilizando backtracking. Procesamos la suma por columnas con acarreo, respetando la asignación de dígitos distintos y la prohibición de ceros iniciales. También comparamos las soluciones para aplicar los desempates del enunciado.
-- Utilizamos una herramienta de IA como apoyo para revisar la búsqueda por columnas, las podas y algunos detalles de la implementación. Contrastamos las sugerencias con el enunciado y el código propio; no usamos una solución completa generada por IA.
+- Utilizamos una herramienta de IA como apoyo para revisar la búsqueda por columnas, las podas y algunos detalles de la implementación. Contrastamos las sugerencias con el enunciado y el código propio
